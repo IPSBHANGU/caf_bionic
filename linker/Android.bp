@@ -169,12 +169,13 @@ cc_binary {
         debuggable: {
             cppflags: ["-DUSE_LD_CONFIG_FILE"],
         },
+caf: {
         target_process_sdk_version_override: {
             cppflags: ["-DSDK_VERSION_OVERRIDES=\"%s\""],
         },
         target_shim_libs: {
             cppflags: ["-DLD_SHIM_LIBS=\"%s\""],
-        },
+        }, },
     },
 
     cppflags: ["-Wold-style-cast"],
@@ -283,3 +284,4 @@ cc_library {
         never: true,
     },
 }
+
